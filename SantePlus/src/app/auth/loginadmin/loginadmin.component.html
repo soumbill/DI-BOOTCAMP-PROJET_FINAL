@@ -1,0 +1,29 @@
+<div class="center">
+  <h1>Connexion</h1>
+  <form name="form"
+   #f="ngForm"
+  (ngSubmit)="f.form.valid && onSubmit()" >
+
+    <div class="txt_field">
+      <input type="email"  name="email" required [(ngModel)]="form.email" #email="ngModel">
+      <span></span>
+      <label>Email</label>
+      <div class="form_error" *ngIf="email.errors && f.submitted"> Veuillez saisir votre email</div>
+    </div>
+
+    <div class="txt_field">
+
+      <input type="password" name="password"  [(ngModel)]="form.password" #password="ngModel" required minlength="5">
+      <span></span>
+      <label>Mot de Passe</label>
+
+      <div class="form_error" *ngIf="password.errors && f.submitted">
+        <div *ngIf="password.errors?.['required']"> Veuillez entrer votre mot de passe</div>
+        <div *ngIf="password.errors?.['minlength']">Votre mot de passe doit comporter 5 carrecteres minimum</div>
+      </div>
+    </div>
+    <input type="submit" value="Login">
+    <div class="signup_link">
+      pas de compte <a routerLink="../signup">s'inscrire</a>
+    </div>
+  </form>

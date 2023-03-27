@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: black">Liste des patients</a>
+  </div>
+</nav>
+
+<hr>
+
+<table>
+  <tr>
+    <th>N°</th>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Date de naissance</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let patient of displayedPatients; let i = index">
+    <td>{{i + 1}}</td>
+    <td>{{patient.nom}}</td>
+    <td>{{patient.prenom}}</td>
+    <td>{{patient.datenaiss}}</td>
+    <td>
+      <tr>
+        <td style="border:none"><a routerLink="modifier/{{patient.id}}" class="btn btn-primary">Modifier</a></td>
+        <td style="border:none"><a routerLink="delete/{{patient.id}}" class="btn btn-danger">Supprimer</a></td>
+      </tr>
+    </td>
+  </tr>
+</table>
+

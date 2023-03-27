@@ -1,0 +1,113 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
+	background: rgb(0, 157, 255);
+  color: #23242b;
+}
+.u-name {
+	font-size: 30px;
+	padding-left: 17px;
+}
+.u-name b {
+	color: #fff;
+
+}
+
+
+.user-p img {
+	width: 100px;
+	border-radius: 50%;
+}
+
+.side-bar {
+	width: 250px;
+	background: rgb(0, 157, 255);
+	min-height: 100vh;
+	transition: 500ms width;
+}
+.body {
+	display: flex;
+}
+.section-1 {
+	width: 100%;
+  background-image: url("https://www.malakoffhumanis.com/sites/smile/files/styles/editorial_page_top_image_desktop/public/images/2020-282-mh-photo-medecin-traitant-et-parcours-de-soins-coordonnes-as-295664542-1024x577.jpg?itok=3UJ0oKQL");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.section-1 h1 {
+	color: #fff;
+	font-size: 60px;
+}
+
+
+.side-bar ul li {
+	font-size: 16px;
+	padding: 15px 0px;
+	padding-left: 20px;
+	transition: 500ms ;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.side-bar ul li a:hover  {
+
+  font-size: 22px;
+}
+
+.side-bar ul li a {
+	text-decoration: none;
+	color: #eee;
+	cursor: pointer;
+	letter-spacing: 1px;
+  font-size: 20px;
+}
+
+#navbtn {
+	display: inline-block;
+	margin-left: 70px;
+	font-size: 20px;
+
+}
+#checkbox {
+	display: none;
+}
+#checkbox:checked ~ .body .side-bar {
+	width: 60px;
+}
+#checkbox:checked ~ .body .side-bar .user-p{
+	visibility: hidden;
+}
+#checkbox:checked ~ .body .side-bar a span{
+	display: none;
+}
+
+button{
+  color:rgb(0, 157, 255);
+  font-size: 30px;
+  background-color:rgb(0, 157, 255);;
+  border-radius: 10px ;
+  width: 150px;
+  height: 40px;
+  margin-left: 10px;
+  border: none;
+}
+
+h2{
+  color:#fff;
+}
+
+

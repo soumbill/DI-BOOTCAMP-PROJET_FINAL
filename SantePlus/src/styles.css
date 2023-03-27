@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  /* background:  url("https://media.istockphoto.com/id/1159312593/fr/photo/%C3%A9liminer-les-retards-dans-les-soins-aux-patients-gr%C3%A2ce-%C3%A0-la-technologie-num%C3%A9rique.jpg?s=612x612&w=0&k=20&c=7Ss8M5w_W-0IRYQuxDuZMRp3AocKChRkPQ1k2We195A="),rgba(0,0,0,0.1); */
+  background-blend-mode: color ;
+  background-size: cover;
+}

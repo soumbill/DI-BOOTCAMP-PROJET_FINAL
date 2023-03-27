@@ -1,0 +1,57 @@
+
+
+<input type="checkbox" id="checkbox">
+	<header class="header">
+		<h2 class="u-name">Sante<b>Plus</b>
+			<label for="checkbox">
+
+			</label>
+		</h2>
+
+    <div>
+      <button (click)="logout()"><i class="fa-solid fa-right-from-bracket" style="color:black"></i></button></div>
+
+	</header>
+	<div class="body">
+		<nav class="side-bar">
+
+			<ul>
+				<li>
+					<a >
+            <i class="fa-solid fa-user"></i>
+						<span>Administrateur</span>
+					</a>
+				</li>
+        <li>
+					<a routerLink="/admin/patient">
+            <div class="espace">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>Patients</span></div>
+					</a>
+				</li>
+
+				<li>
+					<a routerLink="/admin/hopital">
+						<i class="fa-solid fa-house-medical-flag"></i>
+						<span>Medecin</span>
+					</a>
+				</li>
+
+
+
+        <li>
+					<a routerLink="/admin/rdv">
+						<i class="fa-sharp fa-regular fa-timeline"></i>
+						<span>Rendez-vous</span>
+					</a>
+				</li>
+
+			</ul>
+		</nav>
+		<section class="section-1">
+      <router-outlet></router-outlet>
+		</section>
+	</div>
+
+

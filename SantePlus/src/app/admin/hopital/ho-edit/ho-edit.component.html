@@ -1,0 +1,38 @@
+<div class="center">
+  <h1>Modification</h1>
+  <form name="form">
+
+
+    <div class="txt_field">
+      <input type="text"  name="nom" [(ngModel)]="medecin[0].nom">
+      <span></span>
+      <label>Nom de l'hopital</label>
+    </div>
+
+    <div class="txt_field">
+      <input type="text"  name="prenom" [(ngModel)]="medecin[0].prenom">
+      <span></span>
+      <label>Adresse</label>
+
+    </div>
+
+    <div class="txt_field">
+      <input type="text"  name="specialite" [(ngModel)]="medecin[0].specialite">
+      <span></span>
+      <label>Commune</label>
+
+    </div>
+     <div class="txt_field">
+      <input type="text"  name="contact" [(ngModel)]="medecin[0].contact">
+      <span></span>
+      <label>Telephone</label>
+
+    </div>
+
+
+  <input type="submit" value="Modifier" (click)="EditHopital()">
+    <div class="signup_link">
+
+    </div>
+  </form>
+</div>

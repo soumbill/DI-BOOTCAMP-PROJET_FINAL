@@ -1,0 +1,54 @@
+<!-- Barre de navigation  -->
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <!-- Liste des hopitaux -->
+
+    <!-- Barre de recherche  -->
+    <form class="d-flex">
+
+<!-- Bouton pour ajouter un hôpital -->
+    <a routerLink="ajouter" class="btn btn-success">Ajouter</a>
+    </form>
+  </div>
+</nav>
+
+<!-- Horizontal rule -->
+<hr>
+
+<!-- Tableau des hopitaux -->
+<table class="table-style">
+  <thead>
+    <!-- Affichage de la liste des hôpitaux -->
+    <tr>
+      <th>N°</th>
+      <th>Nom</th>
+      <th>Prenom</th>
+      <th>Specialité</th>
+      <th>contact</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Loop through the displayed hospitals -->
+    <tr *ngFor="let medecin of displayedHopitaux; let i = index">
+      <td>{{i + 1}}</td>
+      <td>{{medecin.nom}}</td>
+      <td>{{medecin.prenom}}</td>
+      <td>{{medecin.specialite}}</td>
+      <td>{{medecin.contact}}</td>
+
+      <td>
+
+        <tr>
+          <!-- Bouton pour modifier l'hôpital -->
+          <td style="border:none"><a routerLink="modifier/{{medecin.id}}" class="btn btn-primary">Modifier</a></td>
+          <!-- Bouton pour supprimer l'hôpital -->
+          <td style="border:none"><a routerLink="delete/{{medecin.id}}" class="btn btn-danger">Supprimer</a></td>
+        </tr>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- " Button pour afficher le reste"  -->
+

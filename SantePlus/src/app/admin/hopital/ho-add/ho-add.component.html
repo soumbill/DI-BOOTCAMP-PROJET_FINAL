@@ -1,0 +1,36 @@
+<div class="center">
+  <h1>Ajouter un medecin</h1>
+  <form name="form" method="post">
+    <div class="txt_field">
+      <input type="text"  name="nom" [(ngModel)]="medecin.nom" >
+      <span></span>
+      <label>Nom</label>
+    </div>
+
+    <div class="txt_field">
+      <input type="text"  name="prenom" [(ngModel)]="medecin.prenom">
+      <span></span>
+      <label>Prenom</label>
+    </div>
+    <div class="txt_field">
+      <input type="text"  name="specialite" [(ngModel)]="medecin.specialite">
+      <span></span>
+      <label>Spécialité</label>
+    </div>
+
+    <div class="txt_field">
+      <input type="text"  name="contact" [(ngModel)]="medecin.contact">
+      <span></span>
+      <label>Contact</label>
+    </div> <div class="txt_field">
+      <input type="text"  name="password"  [(ngModel)]="medecin.password">
+      <span></span>
+      <label>Mot de passe</label>
+    </div>
+
+    <input type="submit" value="Ajouter" (click)="ajouterHopital()">
+    <div class="signup_link">
+
+    </div>
+  </form>
+</div>

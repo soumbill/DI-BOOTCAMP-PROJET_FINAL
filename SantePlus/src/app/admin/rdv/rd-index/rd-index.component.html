@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: black">Liste des RDV</a>
+  </div>
+</nav>
+
+<hr>
+
+<table>
+  <tr>
+    <th>N°</th>
+    <th>Date des rendez-vous</th>
+    <th>Id patient</th>
+    <th>Id medecin</th>
+    <th>Action</th>
+  </tr>
+
+  <tr *ngFor="let rdv of displayedrdv; let i = index">
+    <td>{{i + 1}}</td>
+    <td>{{rdv.date_heure}}</td>
+    <td>{{rdv.id_patient}}</td>
+    <td>{{rdv.id_medecin}}</td>
+    <td>
+      <tr>
+        <td style="border:none"><a routerLink="modifier/{{rdv.id}}" class="btn btn-primary">Modifier</a></td>
+        <td style="border:none"><a routerLink="delete/{{rdv.id}}" class="btn btn-danger">Supprimer</a></td>
+      </tr>
+    </td>
+  </tr>
+</table>
+

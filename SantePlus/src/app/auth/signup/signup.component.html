@@ -1,0 +1,39 @@
+ <div class="center">
+  <h1>Inscription</h1>
+  <form name="form" method="post">
+    <div class="txt_field">
+      <input type="text"  name="nom" [(ngModel)]="patient.nom" >
+      <span></span>
+      <label>Nom</label>
+    </div>
+
+    <div class="txt_field">
+      <input type="text"  name="prenom" [(ngModel)]="patient.prenom">
+      <span></span>
+      <label>Prenom</label>
+    </div>
+
+    <div class="txt_field">
+      <input type="date"  name="datenaiss" [(ngModel)]="patient.datenaiss">
+      <span></span>
+      <label>Date de naissance</label>
+    </div>
+    <div class="txt_field">
+      <input type="text"  name="contact" [(ngModel)]="patient.contact">
+      <span></span>
+      <label>Contact</label>
+    </div>
+    <div class="txt_field">
+      <input type="password"  name="password" [(ngModel)]="patient.password">
+      <span></span>
+      <label>Password</label>
+    </div>
+
+
+    <input type="submit" value="Ajouter" (click)="ajouterPatient()">
+    <div class="signup_link">
+      Tu as déjà un compte <a routerLink="../login">se connecter</a>
+    </div>
+  </form>
+</div>
+
